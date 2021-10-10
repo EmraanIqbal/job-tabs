@@ -4,6 +4,7 @@ import "../App.css";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import axios from "axios";
 import { Spinner } from "@chakra-ui/spinner";
+import { Button } from "@chakra-ui/button";
 
 const url = "https://course-api.com/react-tabs-project";
 const Tab = () => {
@@ -44,8 +45,20 @@ const Tab = () => {
         Experience
       </Heading>
       <Text className="underline"></Text>
+      
       <Container maxW="container.lg">
         <VStack>
+        {jobs.map((item, index) => {
+            return (
+              <Button
+                key={item.id}
+                onClick={() => setValue(index)}
+                className={`job-btn ${index === value && 'active-btn'}`}
+              >
+                {item.company}
+              </Button>
+            )
+          })}
         <Heading as="h4" size="md">
           {title}
         </Heading>
