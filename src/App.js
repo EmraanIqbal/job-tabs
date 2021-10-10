@@ -5,8 +5,8 @@ import Example from "./example";
 function App() {
   return (
     <>
-      <Tab />
     <Example/>
+      <Tab />
     </>
   );
 }
