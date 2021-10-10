@@ -1,5 +1,13 @@
-.App {
-  text-align: center;
+.underline {
+  /* text-align: center; */
+  width: 5rem;
+  height: .25rem;
+  margin-bottom: 1.25rem;
+  background: #2caeba;
+  /* background: var(--clr-primary-5); */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
 }
 
 .App-logo {

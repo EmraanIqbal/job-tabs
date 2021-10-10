@@ -1,12 +1,13 @@
 import "./App.css";
 import Tab from "./components/Tab";
+import Example from "./example";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hey React</h1>
+    <>
       <Tab />
-    </div>
+    <Example/>
+    </>
   );
 }
 
