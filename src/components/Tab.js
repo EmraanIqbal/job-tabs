@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Text } from "@chakra-ui/layout";
+import { Box, Container, Heading, Text, VStack } from "@chakra-ui/layout";
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import { FaAngleDoubleRight } from "react-icons/fa";
@@ -45,6 +45,7 @@ const Tab = () => {
       </Heading>
       <Text className="underline"></Text>
       <Container maxW="container.lg">
+        <VStack>
         <Heading as="h4" size="md">
           {title}
         </Heading>
@@ -61,6 +62,7 @@ const Tab = () => {
         </Heading>
         <Text>{dates}</Text>
         <Text>{duties}</Text>
+        </VStack>
       </Container>
     </Box>
   );
